@@ -15,8 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hideokamoto/nx-react-ui-example": ["libs/ui/src/index.ts"],
-      "@hideokamoto/nx-react-greeding-example": ["libs/greeding/src/index.ts"]
+      "@hideokamoto-sandbox/nx-react-ui-example": ["libs/ui/src/index.ts"],
+      "@hideokamoto-sandbox/nx-react-greeding-example": ["libs/greeding/src/index.ts"],
+      "@hideokamoto-sandbox/nx-react-github-registory": ["libs/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

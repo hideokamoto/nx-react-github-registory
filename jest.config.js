@@ -3,5 +3,6 @@ module.exports = {
     '<rootDir>/apps/demo',
     '<rootDir>/libs/ui',
     '<rootDir>/libs/greeding',
+    '<rootDir>/libs/code',
   ],
 };

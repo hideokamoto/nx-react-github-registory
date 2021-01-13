@@ -1,5 +1,5 @@
 {
-  "name": "@hideokamoto/nx-gh-registory",
+  "name": "@hideokamoto-sandbox/nx-gh-registory",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -23,7 +23,12 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "libs": "nx run-many --projects \"ui,greeding,core\"",
+    "libs:lint": "yarn libs --target lint",
+    "libs:format": "yarn libs --target format",
+    "libs:build": "yarn libs --target build",
+    "libs:test": "yarn libs --target test"
   },
   "private": true,
   "dependencies": {
@@ -38,7 +43,7 @@
     "url": "https://github.com/hideokamoto/nx-react-github-registory"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@hideokamoto"
+    "registry": "https://npm.pkg.github.com/@hideokamoto-sandbox"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",

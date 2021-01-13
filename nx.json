@@ -19,6 +19,7 @@
     "demo": { "tags": [] },
     "demo-e2e": { "tags": [], "implicitDependencies": ["demo"] },
     "ui": { "tags": [] },
-    "greeding": { "tags": [] }
+    "greeding": { "tags": [] },
+    "core": { "tags": [] }
   }
 }
