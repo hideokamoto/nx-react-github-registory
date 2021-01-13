@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@hideokamoto/nx-react-ui-example": ["libs/ui/src/index.ts"],
+      "@hideokamoto/nx-react-greeding-example": ["libs/greeding/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -17,6 +17,8 @@
   },
   "projects": {
     "demo": { "tags": [] },
-    "demo-e2e": { "tags": [], "implicitDependencies": ["demo"] }
+    "demo-e2e": { "tags": [], "implicitDependencies": ["demo"] },
+    "ui": { "tags": [] },
+    "greeding": { "tags": [] }
   }
 }
