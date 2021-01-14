@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/hideokamoto/nx-react-github-registory/compare/greeding-v3.0.0...greeding-v4.0.0) (2021-01-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* show props
+
+### Features
+
+* show props ([0a671fc](https://github.com/hideokamoto/nx-react-github-registory/commit/0a671fc46a446cfa483ebd2a124d12f5b2bf28a7))
+
 ## 3.0.0 (2021-01-14)
 
 
