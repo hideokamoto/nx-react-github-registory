@@ -5,8 +5,10 @@ set -o errexit -o noclobber -o nounset -o pipefail
 
 getBuildType() {
   local release_type="minor"
-  if [[ "$1" == *"feat"* ]]; then
+  if [[ "$1" == *"BREAKING CHANGE"* || "$1" == *"!:"* ]]; then
     release_type="major"
+  elif [[ "$1" == *"feat"* ]]; then
+    release_type="minor"
   elif [[ "$1" == *"fix"* || "$1" == *"docs"* || "$1" == *"chore"* ]]; then
     release_type="patch"
   fi
@@ -30,7 +32,9 @@ if [ "$AFFECTED" != "" ]; then
     echo "Setting version for $lib"
     cd "$PARENT_DIR"
     cd "$ROOT_DIR/libs/${lib/-//}"
-    npm version "$RELEASE_TYPE" -f -m "RxJS Primitives $RELEASE_TYPE"
+    npm version "$RELEASE_TYPE" -f -m "chore: $RELEASE_TYPE"
+    git add ./
+    git commit -m "chore: $RELEASE_TYPE"
     echo "Building $lib"
     cd "$PARENT_DIR"
     npm run build "$lib" -- --with-deps
