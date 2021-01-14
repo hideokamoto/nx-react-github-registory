@@ -1,5 +1,5 @@
 {
   "path": ".",
-  "tag-prefix": "core-v",
+  "tag-prefix": "@hideokamoto/core@v",
   "releaseCommitMessageFormat": "chore(release): @hideokamoto/core@{{currentTag}}"
 }

@@ -1,5 +1,5 @@
 {
   "path": ".",
-  "tag-prefix": "ui-v",
+  "tag-prefix": "@hideokamoto/ui@v",
   "releaseCommitMessageFormat": "chore(release): @hideokamoto/ui@{{currentTag}}"
 }

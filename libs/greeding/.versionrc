@@ -1,5 +1,5 @@
 {
   "path": ".",
-  "tag-prefix": "greeding-v",
+  "tag-prefix": "@hideokamoto/greeding@v",
   "releaseCommitMessageFormat": "chore(release): @hideokamoto/greeding@{{currentTag}}"
 }
