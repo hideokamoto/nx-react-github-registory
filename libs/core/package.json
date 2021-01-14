@@ -1,4 +1,11 @@
 {
-  "name": "@hideokamoto-sandbox/nx-react-github-registory",
-  "version": "0.3.0"
+  "name": "@hideokamoto/nx-react-github-registory",
+  "version": "0.3.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hideokamoto/nx-react-github-registory"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@hideokamoto"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@hideokamoto-sandbox/nx-gh-registory",
+  "name": "@hideokamoto/nx-gh-registory",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -43,7 +43,7 @@
     "url": "https://github.com/hideokamoto/nx-react-github-registory"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@hideokamoto-sandbox"
+    "registry": "https://npm.pkg.github.com/@hideokamoto"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
