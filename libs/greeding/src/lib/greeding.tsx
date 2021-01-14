@@ -9,6 +9,7 @@ export function Greeding(props: GreedingProps) {
   return (
     <div>
       <h1>Welcome to Greeding!</h1>
+      <pre><code>{JSON.stringify(props, null, 2)}</code></pre>
     </div>
   );
 }
