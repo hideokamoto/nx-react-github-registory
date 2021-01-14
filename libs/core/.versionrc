@@ -1,5 +1,5 @@
 {
   "path": ".",
-  "tag-prefix": "@hideokamoto/core@v",
-  "releaseCommitMessageFormat": "chore(release): @hideokamoto/core@{{currentTag}}"
+  "tag-prefix": "@hideokamoto/nx-react-github-registory@v",
+  "releaseCommitMessageFormat": "chore(release): @hideokamoto/nx-react-github-registory@{{currentTag}}"
 }

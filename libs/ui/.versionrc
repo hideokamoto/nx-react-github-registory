@@ -1,5 +1,5 @@
 {
   "path": ".",
-  "tag-prefix": "@hideokamoto/ui@v",
-  "releaseCommitMessageFormat": "chore(release): @hideokamoto/ui@{{currentTag}}"
+  "tag-prefix": "@hideokamoto/nx-react-ui-example@v",
+  "releaseCommitMessageFormat": "chore(release): @hideokamoto/nx-react-ui-example@{{currentTag}}"
 }

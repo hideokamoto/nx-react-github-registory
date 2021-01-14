@@ -1,5 +1,5 @@
 {
   "path": ".",
-  "tag-prefix": "@hideokamoto/greeding@v",
-  "releaseCommitMessageFormat": "chore(release): @hideokamoto/greeding@{{currentTag}}"
+  "tag-prefix": "@hideokamoto/nx-react-greeding-example@v",
+  "releaseCommitMessageFormat": "chore(release): @hideokamoto/nx-react-greeding-example@{{currentTag}}"
 }
