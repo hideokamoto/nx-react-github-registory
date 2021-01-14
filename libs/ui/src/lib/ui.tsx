@@ -9,6 +9,7 @@ export function Ui(props: UiProps) {
   return (
     <div>
       <h1>Welcome to UI!</h1>
+      <pre><code>{JSON.stringify(props, null, 2)}</code></pre>
     </div>
   );
 }
