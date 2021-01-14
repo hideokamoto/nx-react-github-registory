@@ -8,7 +8,7 @@ export interface GreedingProps {}
 export function Greeding(props: GreedingProps) {
   return (
     <div>
-      <h1>Welcome to greeding!</h1>
+      <h1>Welcome to Greeding!</h1>
     </div>
   );
 }

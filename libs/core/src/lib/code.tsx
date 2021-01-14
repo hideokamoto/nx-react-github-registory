@@ -8,7 +8,7 @@ export interface CodeProps {}
 export function Code(props: CodeProps) {
   return (
     <div>
-      <h1>Welcome to code!</h1>
+      <h1>Welcome to Code!</h1>
     </div>
   );
 }
