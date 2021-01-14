@@ -29,19 +29,19 @@ if [ "$AFFECTED" != "" ]; then
   echo "Copy Environment Files"
 
   while IFS= read -r -d $' ' lib; do
-    echo "Setting version for $lib"
     cd "$PARENT_DIR"
-    cd "$ROOT_DIR/libs/${lib/-//}"
-    npm version "$RELEASE_TYPE" -f -m "chore: $RELEASE_TYPE"
     echo "Building $lib"
-    cd "$PARENT_DIR"
     npm run build "$lib" -- --with-deps
     wait
+    echo "Setting version for $lib"
+    cd "$ROOT_DIR/libs/${lib/-//}"
+    node node_modules/.bin/nx release "$lib"
   done <<<"$AFFECTED " # leave space on end to generate correct output
 
   cd "$PARENT_DIR"
-  git add ./
-  git commit -m "chore: $RELEASE_TYPE"
+  git push origin master
+  echo "Push the new tags"
+  git push origin --tags
 
   while IFS= read -r -d $' ' lib; do
     if [ "$DRY_RUN" == "False" ]; then
