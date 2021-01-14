@@ -34,7 +34,6 @@ if [ "$AFFECTED" != "" ]; then
     npm run build "$lib" -- --with-deps
     wait
     echo "Setting version for $lib"
-    cd "$ROOT_DIR/libs/${lib/-//}"
     npm run nx release "$lib"
   done <<<"$AFFECTED " # leave space on end to generate correct output
 
