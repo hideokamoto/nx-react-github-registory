@@ -35,7 +35,7 @@ if [ "$AFFECTED" != "" ]; then
     wait
     echo "Setting version for $lib"
     cd "$ROOT_DIR/libs/${lib/-//}"
-    node node_modules/.bin/nx release "$lib"
+    npm run nx release "$lib"
   done <<<"$AFFECTED " # leave space on end to generate correct output
 
   cd "$PARENT_DIR"
